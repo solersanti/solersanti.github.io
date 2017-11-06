@@ -1,0 +1,146 @@
+/* Note target the body first with the modifer.
+For example, every evenSecond change the div color to blue.
+Every oddSecond change the div color to red
+
+body.evenS .time {
+  color:blue;
+}
+
+body.oddS .time {
+  color:red;
+}
+
+Target multiple together. Every evenSecond only in the evening, display an image.
+
+body.evenS.pm .sunset {
+  display:block;
+}
+
+*/
+
+
+/* Time CSS here */
+
+body.am .time{
+  margin-top: 600px;
+  padding-bottom: 0px;
+  margin-left: 10px;
+  padding-left: 60px;
+  font-size: 50px;
+  font-family: courier;
+  font-weight: bold;
+  color: white;
+
+
+
+
+
+}
+
+body.pm .time{
+  margin-bottom: 600px;
+  padding-bottom: 0px;
+  margin-left: 10px;
+  padding-left: 60px;
+  font-size: 50px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: white;
+
+}
+
+body.am {
+background-image: url('../images/morning.jpg');
+background-size: cover;
+}
+
+body.pm {
+  background-image: url('../images/pb.jpg');
+}
+
+
+
+
+body.oddS.pm .sleep, body.evenS.pm .sleep{
+  animation: fadeup 1s infinite;
+}
+
+@keyframes fadeup {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+body.evenS.pm .sleep1 {
+  display: block;
+}
+
+body.oddS.pm .sleep1 {
+  display: none;
+
+}
+
+body.oddS.pm .sleep2 {
+  display: block;
+}
+
+body.evenS.pm .sleep2 {
+  display: none;
+
+}
+
+body.evenS.am .sleep {
+  display: none;
+}
+
+body.oddS.am .sleep {
+  display: none;
+}
+
+body.oddS.am .morning, body.evenS.am .morning{
+  animation: fadeup 1s infinite;
+}
+
+@keyframes fadeup {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+body.evenS.am .morning1 {
+  display: block;
+}
+
+body.oddS.am .morning1 {
+  display: none;
+  background-image: : url('../images/ny1.jpg');
+
+
+}
+
+body.oddS.am .morning2 {
+  display: block;
+}
+
+body.evenS.am .morning2 {
+  display: none;
+
+}
+
+body.evenS.pm .morning {
+  display: none;
+}
+
+body.oddS.pm .morning {
+  display: none;
+}
